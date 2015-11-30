@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>python数据类型总结 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="python数据类型总结
+标签（空格分隔）：学习总结
+
+　　最近学习了python的几种数据类型，今天来做一下总结。　　现在可以想到的几种数据类型：整型、浮点型、字符串、列表、元组、集合、字典、布尔类型。　　整型、浮点型，字符串这些我们之前学习ｃ语言都接触过，所以这一块过得比较快。整型顾名思义就是整数啦，不过在python里比较方便的一点是我们不需要再去区分整型和长整型，一旦我们键入的数大于了普通">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python数据类型总结">
+<meta property="og:url" content="http://yoursite.com/2015/08/17/python数据类型总结/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="python数据类型总结
+标签（空格分隔）：学习总结
+
+　　最近学习了python的几种数据类型，今天来做一下总结。　　现在可以想到的几种数据类型：整型、浮点型、字符串、列表、元组、集合、字典、布尔类型。　　整型、浮点型，字符串这些我们之前学习ｃ语言都接触过，所以这一块过得比较快。整型顾名思义就是整数啦，不过在python里比较方便的一点是我们不需要再去区分整型和长整型，一旦我们键入的数大于了普通">
+<meta property="og:image" content="http://7xl4oh.com1.z0.glb.clouddn.com/20140707203910_mvBW2.thumb.700_0.jpeg">
+<meta property="og:updated_time" content="2015-11-30T04:52:26.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="python数据类型总结">
+<meta name="twitter:description" content="python数据类型总结
+标签（空格分隔）：学习总结
+
+　　最近学习了python的几种数据类型，今天来做一下总结。　　现在可以想到的几种数据类型：整型、浮点型、字符串、列表、元组、集合、字典、布尔类型。　　整型、浮点型，字符串这些我们之前学习ｃ语言都接触过，所以这一块过得比较快。整型顾名思义就是整数啦，不过在python里比较方便的一点是我们不需要再去区分整型和长整型，一旦我们键入的数大于了普通">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">丸子发</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="/#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">丸子发</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="null" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">丸子发</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="[layout]-python数据类型总结" class="article article-type-[layout]" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/17/python数据类型总结/" class="article-date">
+  	<time datetime="2015-08-17T03:46:02.000Z" itemprop="datePublished">2015-08-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      python数据类型总结
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>python数据类型总结</p>
+<p>标签（空格分隔）：学习总结</p>
+<hr>
+<p>　　最近学习了python的几种数据类型，今天来做一下总结。<br>　　现在可以想到的几种数据类型：整型、浮点型、字符串、列表、元组、集合、字典、布尔类型。<br>　　整型、浮点型，字符串这些我们之前学习ｃ语言都接触过，所以这一块过得比较快。整型顾名思义就是整数啦，不过在python里比较方便的一点是我们不需要再去区分整型和长整型，一旦我们键入的数大于了普通整型的３２位，系统会自动把它识别成长整型来处理。另外，python还可以处理负数～～<br>　　浮点型也就是指有小数点的数。这里有一个点需要注意，就是“地板除”和“真正的除法”的区别。真正的除法返回真正的商，符号是“／”，不管参与运算的数是整型还是浮点型，运算结果都会是精确的。比如１／２，不会返回０而是会返回０.５；地板除返回的是所得结果的整数部分，符号是“／／”，比如１／／２那一定会返回０啦～～<br>　　字符串是指用单引号或者双引号或者三引号或者三个双引号括起来的东东（这句话好长２３３３）。单引号和双引号功能上基本一致，只需注意单引号内的字符串内如果想出现单引号就要求助转义字符，而双引号不用，同理三引号内双引号和单引号都可以直接打。三引号还有一个比较特别的地方是三引号内可以直接输入回车换行哈哈。三个双引号打出来的字符串不可以被调用，是一个注释。<br>　　列表长这样ｌｉｓｔ１＝［＇ａ＇，＇ｂ＇，＇ｃ＇］，元组长这样ｔｕｐｌｅ１＝（＇ａ＇，＇ｂ＇，＇ｃ＇），它们长得比较像。类比ｃ语言中的数组，它们当中的元素可以这样调用————ｌｉｓｔ１［０］即使调用第一个元素，依次类推。不过奇妙的是最后一个元素既可以用顺着数数的方法，也可以用[-1]表示它的排序，然后前面的依次是-2 -3 -4·····当然第一个还是0哈哈。列表和元组重要的区别是列表可以被修改而元组不可以，因此元组可以做字典的键而列表不可以，因为键需要满足不可变的条件。元组内部即便只有一个元素，也要在它后面加一个逗号吼！<br>　　集合这样用：a=set([‘2’,’2’,’1’])最后得到一个[‘1’,’2’]这个新列表。集合的作用就是把列表中相同的元素保留一个然后形成一个新的无序的元素集。最后以列表的形式输出。<br>　　字典长这样：dic={key:value}。key就是关键字，value表示关键字对应的值。其中关键字一般是字符串、数字或者元组，不可以是可变的数据类型比如列表。字典可以用于数据的存储和查找。<br>　　布尔类型就还是true false这样的表示真假的数据类型。在python中，None、0、空字符串“”、空元组()、空列表[]、空字典{}都被当作False，其他对象均为True。写代码的时候直接写True False 就可以被识别为布尔类型。<br>　　同时回顾一下这两天接触到的一些内置函数：
+　　</p>
+<p> 1.<br> tuple()可以把对象变成一个元组；<br> 2.<br> list()可以把对象变成一个列表；<br> 3.<br> id()可以返回对象的内存地址；<br> 4.<br> len（)返回对象的长度；<br> 5.<br> type()返回对象的类型；<br> 6.<br> 还有经典的print和input；<br> 7.<br> input和raw_input的区别是后者把输入的内容都当字符串处理，好像后者用得比较多。<br> 8.<br> str()把对象变成一个字符串<br> 9.<br> dic()可以生成一个字典<br>10.<br>zip() 接受一系列可迭代对象作为参数，将对象中对应的元素打包成一个个tuple（元组），然后返回由这些tuples组成的list（列表）。若传入参数的长度不等，则返回list的长度和参数中长度最短的对象。   　<br>　　以后练习到新的，再补充。</p>
+<p>加油加油~~<br><img src="http://7xl4oh.com1.z0.glb.clouddn.com/20140707203910_mvBW2.thumb.700_0.jpeg" alt="我是元气的小丸子啊哈哈哈！">
+　　</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/11/30/test/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/08/16/post1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">post1</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="python数据类型总结" data-title="python数据类型总结" data-url="http://yoursite.com/2015/08/17/python数据类型总结/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 丸子发
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
